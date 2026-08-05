@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wonder Boy Arcade Original (SEGA 1986)</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #050505;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  h1 {
+    color: #f1c40f;
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    text-shadow: 2px 2px 0 #eb3b5a;
+  }
+  #game-wrapper {
+    width: min(96vw, 800px);
+    height: min(75vh, 600px);
+    border: 4px solid #f1c40f;
+    box-shadow: 0 0 25px rgba(241, 196, 15, 0.3);
+    background: #000;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  #info {
+    margin-top: 10px;
+    background: #111;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    text-align: center;
+    font-size: 13px;
+    color: #ccc;
+  }
+  .btn { color: #f1c40f; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h1>WONDER BOY (ARCADE ORIGINAL)</h1>
+
+<div id="game-wrapper">
+  <!-- Emulador directo incrustado desde la base de datos de Internet Archive / JS-MAME -->
+  <iframe src="https://archive.org/embed/arcade_wboy" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+</div>
+
+<div id="info">
+  <b>CONTROLES DE LA RECRATIVA:</b><br>
+  Haz clic en la pantalla para activar | <span class="btn">5</span> Ficha / Coin | <span class="btn">1</span> Start<br>
+  <span class="btn">Flechas</span> Moverte | <span class="btn">CTRL Izq</span> Atacar | <span class="btn">ALT / Espacio</span> Saltar
+</div>
+
+</body>
+</html>
